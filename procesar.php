@@ -1,6 +1,6 @@
 <?php
 // Configuración de la conexión a la bd
-$servername = "localhost"; //
+$servername = "192.168.1.22"; //
 $username = "root"; // usuario de phpmyadmin 
 $password = "679XKaTule351_"; // Contraseña de phpmyadmin
 $dbname = "proyecto"; // 
