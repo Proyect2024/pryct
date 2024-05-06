@@ -15,7 +15,6 @@ if ($conn->connect_error) {
 
 // verificar si se ha enviado
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $id = $_POST['id'];
     $nombre = $_POST['nombre'];
     $apellidos = $_POST['Apellidos'];
     $email = $_POST['email'];
@@ -23,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // consulta SQL para los datos
     $sql = "INSERT INTO formulario_contacto (id, nombre, apellidos, email, telefono)
-            VALUES ('$id', '$nombre', '$apellidos', '$email', '$telefono')";
+            VALUES ('$nombre', '$apellidos', '$email', '$telefono')";
 
     // ejecutar la consulta
     if ($conn->query($sql) === TRUE) {
